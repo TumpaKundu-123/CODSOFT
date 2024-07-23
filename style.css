@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+html,body {
+    height:100%;
+    width:100%;
+}
+#main{
+    background-color:rgb(193, 89, 183);
+    height:100%;
+    width:100%;
+    display:flex;
+    
+}
+#part1{
+    height:100%;
+    width:36%;
+    background-color: rgb(207, 149, 216);
+    
+}
+
+#images img{
+    height:400px;
+    
+    padding-top: 0%;
+    margin-left:10px;
+    margin-top:110px;
+    margin-right:10px;
+    
+}
+#part11{
+  font-size: larger;
+  margin-top:20px;
+  text-decoration:underline;
+  
+  margin-left:20px;
+  border: 3px solid #ddd;
+
+}
+#part111{
+    font-size:large;
+    margin-top:20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: crimson;
+    margin-left:10px;
+    border:2px solid rgb(139, 215, 236);
+}
+#para{
+    font-size:x-large;
+    margin-top:50px;
+    margin-left:20px;
+}
+#part2{
+    height:100%;
+    width:65%;
+    background-color:rgb(212, 176, 161);
+    
+}
+header {
+    
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    text-decoration: solid;
+    cursor: pointer;
+}
+#image img{
+    height:230px;
+    padding-top: 0%;
+    margin-left:480px;
+    margin-top:0px;
+
+}
+#caption{
+    font-size: xx-large;
+    color: darkgreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 15px;
+    margin-left:30px;
+    text-decoration:cadetblue;
+    text-shadow: #fff;
+    display:flex;
+    
+    flex-direction: column;
+}
+
+#part22{
+    font-size: x-large;
+    color: rgb(227, 47, 101);
+    align-self: center;
+    margin-top:30px;
+    margin-left:30px;
+}
+#About{
+    font-size:larger;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top:30px;
+    align-self: center;
+    border:2px solid rgb(133, 220, 227);
+    
+}
+#benefit{
+    font-size:larger;
+    margin-top:4px;
+    border:2px solid rgb(139, 215, 236);
+}
+#benefit nav ul li{
+    display:flex;
+    flex-direction: column;
+    padding-top:2px;
+    margin-top:6px;
+    box-sizing: border-box;
+}
+#container services{
+    font-size:xx-larger;
+    margin-top: 0%;
+    margin-left:10px;
+    color: darkmagenta;
+}
+#contact{
+    font-size: xx-large;
+    color: rgb(12, 12, 141);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#services{
+    font-size: larger;
+    color: blueviolet;
+}
