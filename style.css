@@ -1,149 +1,238 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+   margin:0;
+   padding:0;
+   font-family: 'Arial', sans-serif; 
+   background-color:rgb(135, 192, 218);
 }
-
-/* Body styles */
-html,body {
-    height:100%;
-    width:100%;
-}
-#main{
-    background-color:rgb(193, 89, 183);
-    height:100%;
-    width:100%;
-    display:flex;
-    
-}
-#part1{
-    height:100%;
-    width:36%;
-    background-color: rgb(207, 149, 216);
-    
-}
-
-#images img{
-    height:400px;
-    
-    padding-top: 0%;
-    margin-left:10px;
-    margin-top:110px;
-    margin-right:10px;
-    
-}
-#part11{
-  font-size: larger;
-  margin-top:20px;
-  text-decoration:underline;
   
-  margin-left:20px;
-  border: 3px solid #ddd;
-
-}
-#part111{
-    font-size:large;
-    margin-top:20px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: crimson;
-    margin-left:10px;
-    border:2px solid rgb(139, 215, 236);
-}
-#para{
-    font-size:x-large;
-    margin-top:50px;
-    margin-left:20px;
-}
-#part2{
-    height:100%;
-    width:65%;
-    background-color:rgb(212, 176, 161);
+.portfolio container{
+    min-height: 100px;
+    width:100%;
+    display:flex;
     
-}
-header {
     
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+
+}
+.navlist{
+    display:flex;
+    gap: 3.5em;
     
+    justify-content:center;
+    align-self: center;
+    position:fix;
 }
-
-header nav ul {
-    list-style: none;
-    padding: 0;
+.navlist li{
+    list-style:none;
+    text-transform: uppercase;
+    
+   
 }
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: black;
+.navlist li a{
     text-decoration: none;
-    font-size: large;
-    text-decoration: solid;
-    cursor: pointer;
+    color:black;
+    position:relative;
+    
+
 }
-#image img{
-    height:230px;
-    padding-top: 0%;
-    margin-left:480px;
+.container{
     margin-top:0px;
+    margin-bottom:400px;
 
 }
-#caption{
-    font-size: xx-large;
-    color: darkgreen;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 15px;
-    margin-left:30px;
-    text-decoration:cadetblue;
-    text-shadow: #fff;
+.Name{
+    text-transform: uppercase;
+    font-size: large;
+    justify-content:center;
+    align-self:center;
+    margin-left:150px;
+    margin-top:50px;
+    color:brown;
+}
+.icons .fa-brands{
+    color:black;
+    font-size: 1.8rem;
+    margin:6px;
+    cursor:pointer;
+}
+.icons{
+    size:larger;
     display:flex;
-    
     flex-direction: column;
+    justify-content: center;
+    margin-top:14px;
+
 }
 
-#part22{
-    font-size: x-large;
-    color: rgb(227, 47, 101);
-    align-self: center;
-    margin-top:30px;
-    margin-left:30px;
-}
-#About{
-    font-size:larger;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top:30px;
-    align-self: center;
-    border:2px solid rgb(133, 220, 227);
+
+.content{
+    color:rgb(50, 25, 165);
+    width:98vw;
     
 }
-#benefit{
-    font-size:larger;
+
+.infoContainer{
+    color:rgb(76, 25, 125);
+    display: flex;
+    height: 150vh;
+    width: 80vw;
+    margin-top:0px;
+    margin-left:150px;
+    
+    
+    justify-content:space-around;
+}
+.info{
+    display:flex;
+    justify-content: first baseline;
+    flex-direction: column;
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.About{
+    font-size:large;
+    display:flex;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.image img{
+    height: 300px;
+    padding-top: 0%;
+    
+}
+.buttons{
+    margin-top:34px;
+}    
+
+
+
+
+.buttons button{
+    background-color:rgb(100, 26, 134);
+    color:white;
+    padding:9px 14px;
     margin-top:4px;
-    border:2px solid rgb(139, 215, 236);
+    font-size :15px;
+    border-radius: 5px;
+    margin:0px 3px;
+    cursor:pointer;
 }
-#benefit nav ul li{
-    display:flex;
-    flex-direction: column;
-    padding-top:2px;
-    margin-top:6px;
-    box-sizing: border-box;
+.CV{
+    font-size: medium;
+    color:black;
 }
-#container services{
-    font-size:xx-larger;
-    margin-top: 0%;
-    margin-left:10px;
-    color: darkmagenta;
+.image .img{
+    height:400px;
+    width:300px;
 }
-#contact{
-    font-size: xx-large;
-    color: rgb(12, 12, 141);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.navlist li a::after{
+    content:"";
+    position:absolute;
+    background-color:black;
+    width:0%;
+    height:.1rem;
+    left:0;
+    bottom: -5px;
+    transform:scaleX(0);
+    
 }
-#services{
+.navlist li a :hover::after{
+    transform:scaleX(1);
+   
+}
+.projects{
+    font-size: x-large;
+    color: rgb(3, 80, 55);
+    
+}
+.projects .project {
+    margin-bottom: 2em;
+    font-size:x-large;
+    color:rgb(34, 4, 62);
+    gap: 3rem;
+    margin: 20px;
+}
+.projects .project .Clone{
     font-size: larger;
-    color: blueviolet;
+    font-family: fantasy;
+    margin-bottom: 4px;
+}
+
+.clone .image img {
+    height:40px;
+    
+    border: 1px solid #ccc;
+}
+.skills{
+    font-size: x-large;
+    margin:50px;
+    padding:34px;
+    font-style:inherit;
+    color:rgb(86, 40, 7);
+    font-family: monospace;
+    
+}
+.skills li{
+    font-size: larger;
+    padding:12px;
+    margin:23px;
+}
+.about{
+    color:rgb(1, 8, 1);
+    font:bold;
+    flex-direction:column;
+    display:flex;
+    margin:40px;
+    padding:0px;
+    
+
+}
+.about .name{
+    color:darkgreen;
+    font-size: larger;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 0;
+}
+.image .img{
+    height:100px;
+    justify-content:center;
+    display:flex;
+    align-items: center;
+    margin-left:400px;
+    padding:0;
+    margin-top:30px;
+
+}
+.bio{
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: unset;
+    margin-top:30px;
+    margin-left: 5px;
+    gap:1.3rem;
+}
+.courses{
+    font-size: large;
+    margin-top:6px;
+    text-decoration: underline;
+
+}
+.courses li{
+    font-size:medium;
+    margin-top:6px;
+    color:black;
+    text-decoration: none;
+
+}
+.coding{
+    font-size: large;
+    margin-top: 6px;
+    text-decoration: underline;
+}
+.coding li{
+    font-size:medium;
+    color:black;
+    text-decoration: none;
 }
